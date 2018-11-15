@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userpermance.WorkPerformanceActivity">
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:background="@color/colorPrimary"
+            android:layout_height="@dimen/header_height">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profilePicture"
+                android:layout_width="@dimen/CircleImageWidthH"
+                android:layout_marginLeft="@dimen/CircleImageMarginLeft"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/CircleImageHeightH"
+
+                android:layout_gravity="left"
+                android:src="@drawable/profile"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/civ_border_c"/>
+
+
+            <ImageView
+                android:layout_width="@dimen/CapImgWith"
+                android:layout_marginLeft="@dimen/CapImgLeft"
+                android:layout_marginTop="@dimen/CapImgTop"
+                android:clickable="true"
+                android:onClick="onAddPicture"
+                android:src="@drawable/icon_camera_grey"
+                android:layout_height="@dimen/CapImgHeight" />
+
+
+
+            <LinearLayout
+                android:layout_toRightOf="@id/profilePicture"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/NameLytMrginLft"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Umer Javaid"
+                    android:gravity="bottom|left"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/NameTextS"
+                    android:textStyle="bold"
+                    android:id="@+id/userName"
+                    android:textColor="@android:color/white"
+
+                    />
+
+                <TextView
+                    android:gravity="top|left"
+                    android:textAlignment="gravity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Developer"
+                    android:textSize="@dimen/NameTextS"
+                    android:id="@+id/userDesig"
+                    android:textColor="@android:color/white"
+
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginRight="@dimen/LogoutMrgnR"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/LogoutTS"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:onClick="onSignOutClick"
+                android:background="@drawable/textlines_white"
+                android:text="@string/button_logout"
+                android:textColor="@android:color/white"
+                android:id="@+id/button_signup"
+                />
+
+
+        </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/recycle_bg"
+        android:scrollbars="vertical"
+       android:layout_below="@id/header"/>
+
+
+</RelativeLayout>

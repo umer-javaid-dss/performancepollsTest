@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_sigup_padding">20dp</dimen>
+    <dimen name="sigin_username_marginTop">66dp</dimen>
+    <dimen name="login_button_lyout_marginTop">60dp</dimen>
+    <dimen name="login_button_lyout_height">100dp</dimen>
+    <dimen name="login_button_width">100dp</dimen>
+    <dimen name="login_button_height">40dp</dimen>
+    <dimen name="login_button_text">20sp</dimen>
+    <dimen name="login_buttons_margin">15dp</dimen>
+
+    <dimen name="signup_button_lyout_marginTop">80dp</dimen>
+
+    <dimen name="header_height">70dp</dimen>
+    <dimen name="CircleImageWidthH">60dp</dimen>
+    <dimen name="CircleImageHeightH">60dp</dimen>
+    <dimen name="CircleImageMarginLeft">15dp</dimen>
+
+    <dimen name="CapImgWith">40dp</dimen>
+    <dimen name="CapImgHeight">40dp</dimen>
+    <dimen name="CapImgTop">40dp</dimen>
+    <dimen name="CapImgLeft">35dp</dimen>
+
+
+    <dimen name="NameLytMrginLft">20dp</dimen>
+    <dimen name="NameTextS">20dp</dimen>
+
+    <dimen name="LogoutMrgnR">20dp</dimen>
+    <dimen name="LogoutTS">16dp</dimen>
+
+
+    <dimen name="row_divider_height">3dp</dimen>
+
+    <dimen name="row_item_height">70dp</dimen>
+
+    <dimen name="row_c_rds">4dp</dimen>
+
+    <dimen name="civ_row_leftM">10dp</dimen>
+
+    <dimen name="civ_row_H">60dp</dimen>
+
+    <dimen name="civ_row_W">60dp</dimen>
+
+
+    <dimen name="row_Name_W">70dp</dimen>
+    <dimen name="row_Name_T_S">16dp</dimen>
+    <dimen name="row_Name_M_L">12dp</dimen>
+
+
+    <dimen name="row_Work1_W">70dp</dimen>
+    <dimen name="row_Work2_W">67dp</dimen>
+    <dimen name="row_Work3_W">67dp</dimen>
+
+
+
+
+</resources>

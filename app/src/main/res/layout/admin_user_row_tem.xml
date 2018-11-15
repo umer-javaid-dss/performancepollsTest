@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_item_height"
+    xmlns:app="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="@dimen/row_divider_height"
+
+    >
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="@dimen/row_c_rds">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal"
+            >
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/picture"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimaryDark"
+                android:src="@drawable/profile"
+                android:layout_marginLeft="@dimen/civ_row_leftM"
+                android:layout_width="@dimen/civ_row_W"
+                android:layout_height="@dimen/civ_row_H" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/row_Name_W"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/row_Name_T_S"
+        android:layout_marginLeft="@dimen/row_Name_M_L"
+        android:text="User1"
+        android:textStyle="bold" />
+
+
+        <TextView
+        android:layout_width="@dimen/row_Work1_W"
+        android:id="@+id/workTV1"
+
+         android:textAlignment="center"
+         android:text="0"
+
+        android:layout_height="wrap_content">
+
+        </TextView>
+
+
+            <TextView
+                android:layout_width="@dimen/row_Work2_W"
+                android:id="@+id/workTV2"
+
+                android:textAlignment="center"
+                android:text="0"
+
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="@dimen/row_Work3_W"
+                android:id="@+id/workTV3"
+
+                android:textAlignment="center"
+                android:text="0"
+
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
