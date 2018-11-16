@@ -32,7 +32,7 @@ public class SignUpActivityPresenter implements SignupActivityContract.Presenter
 
 
     @Override
-    public void performSignUp(String username, String userpass, String designation) {
+    public void performSignUp(String username,String name, String userpass, String designation) {
 
         UserModelNew userModelNew=getUsersNew(username,username);
 
@@ -46,7 +46,7 @@ public class SignUpActivityPresenter implements SignupActivityContract.Presenter
 
 
         UserModelNew  newUser= new UserModelNew();
-        newUser.setName(username);
+        newUser.setName(name);
         newUser.setUser_pass(userpass);
         newUser.setUser_name(username);
         newUser.setDesignation(designation.toLowerCase());

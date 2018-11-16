@@ -22,6 +22,7 @@ public class UserSignUpActivity extends AppCompatActivity implements SignupActiv
 
 
     private  EditText username;
+    private  EditText name;
     private  EditText password;
     private  EditText designation;
 
@@ -54,6 +55,15 @@ public class UserSignUpActivity extends AppCompatActivity implements SignupActiv
                             username.requestFocus();
                             return;
                         }
+
+
+                        if(name.getText().toString().trim().length()==0){
+                            name.setError("Name is not entered");
+                            name.requestFocus();
+                            return;
+                        }
+
+
                         if(password.getText().toString().trim().length()==0){
                             password.setError("Password is not entered");
                             password.requestFocus();
@@ -67,6 +77,7 @@ public class UserSignUpActivity extends AppCompatActivity implements SignupActiv
                         }
 
                         presenter.performSignUp(username.getText().toString(),
+                                                name.getText().toString(),
                                                 password.getText().toString(),
                                                 designation.getText().toString());
 
@@ -82,6 +93,7 @@ public class UserSignUpActivity extends AppCompatActivity implements SignupActiv
     {
 
         username = (EditText)findViewById(R.id.editText_user);
+        name     = (EditText)findViewById(R.id.editText_name);
         password = (EditText)findViewById(R.id.editText_password);
         designation=(EditText)findViewById(R.id.editText_designation);
 

@@ -16,7 +16,7 @@ public interface SignupActivityContract {
 
     interface Presenter extends BasePresenter {
 
-        void performSignUp(String username, String userpass,String designation);
+        void performSignUp(String username,String name, String userpass,String designation);
 
 
     }

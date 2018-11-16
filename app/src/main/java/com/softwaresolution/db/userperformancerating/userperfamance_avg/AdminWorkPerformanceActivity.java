@@ -108,7 +108,7 @@ public class AdminWorkPerformanceActivity extends AppCompatActivity implements  
         }
 
 
-        userName.setText(userModel.getUser_name());
+        userName.setText(userModel.getName());
         userDesig.setText(userModel.getDesignation());
 
 
